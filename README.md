@@ -1,5 +1,7 @@
+## Desafio SóCarrão 🚗
+
 <div align="center">
-  <img src="./public/imagens/socarrao_lab.png">
+  <img src="./public/imagens/socarrao_lab.png" height="180" width="800">
 </div>
 
 <br> 
@@ -22,19 +24,19 @@ Desafio proposto pela empresa SóCarrão no Talent Fest 2023 da Laboratória
 
 <br>
 
-### Sobre o desafio
+## Sobre o desafio
 
 O objetivo do desafio é consumir um JSON contendo dados de aproximadamente 50 veículos e lista-los em formato de cards. A listagem de veículos deverá respeitar o padrão de marca e modelo, além de ser responsiva e paginada. 
 
-### Protótipos
+## Protótipos
 
 <img src="./public/imagens/prototipo.png">
-<br>
-<h5> Cores escolhidas para o desafio </h5>
-<img src="./public/imagens/cores.png">
-<br>
 
-### Objetivos alcançados
+### Cores escolhidas para o desafio
+
+<img src="./public/imagens/cores.png">
+
+## Objetivos alcançados
 
 ✅ Listagem de Veículos: Os veículos disponíveis estão sendo apresentados em formato de cards, seguindo o padrão de exibição discursiva da marca e modelo. Quando o limite de espaço no card é alcançado, o nome da marca é escondido, deixando apenas o modelo. Quando o espaço no card é insuficiente para exibir o nome da Marca e do Modelo, é utilizado uma elipse para representar a informação omitida.
 
