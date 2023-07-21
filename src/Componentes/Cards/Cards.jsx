@@ -6,7 +6,7 @@ import OpcoesCards from '../OpcoesCards/OpcoesCards';
 
 const Cards = () => {
 
-    const [cardsPerPage, setCardsPerpage] = useState(6);
+    const [cardsPerPage, setCardsPerpage] = useState(5);
     const [currentPage, setCurrentPage] = useState(0);
     const [layout, setLayout] = useState('vertical');
 
