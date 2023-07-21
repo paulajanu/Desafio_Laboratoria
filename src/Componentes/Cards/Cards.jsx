@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import data from '../../Data/data.json';
-import { Botao, BotaoContainer, Card, CardInfo, Cidade, ContainerMarca, IconeLocation, ImagemCarro, InformacoesDetalhes, ListaDeCards, Marca, Modelo, Valor } from './Styled';
+import { Botao, BotaoContainer, Card, CardInfo, Cidade, IconeLocation, ImagemCarro, InformacoesDetalhes, ListaDeCards, Marca, Modelo, Valor } from './Styled';
 import PaginationComponent from '../PaginationComponent/PaginationComponent';
 import OpcoesCards from '../OpcoesCards/OpcoesCards';
 
 const Cards = () => {
 
-    const [cardsPerPage, setCardsPerpage] = useState(5);
+    const [cardsPerPage, setCardsPerpage] = useState(6);
     const [currentPage, setCurrentPage] = useState(0);
     const [layout, setLayout] = useState('vertical');
 
@@ -30,14 +30,14 @@ const Cards = () => {
     
     return (
         <div>
-           <OpcoesCards handleLayoutToggle={handleLayoutToggle} setCardsPerpage={setCardsPerpage} layout={layout}/>
+            <OpcoesCards handleLayoutToggle={handleLayoutToggle} setCardsPerpage={setCardsPerpage} layout={layout}/>
             <ListaDeCards>
                 {currentItens.map ((card, index) => (
                     <Card key={index} layout={layout}>
-                        <ContainerMarca>
+                        <div>
                             <ImagemCarro src={card.veiculo_foto[0]} alt='Imagem do carro' layout={layout}/>
                             <Cidade><IconeLocation/>{card.cidade_nome}</Cidade>
-                        </ContainerMarca>
+                        </div>
                         <CardInfo>
                             <Marca layout={layout}>{card.veiculo_marca} {card.modelo_nome_pai}</Marca>
                             <Modelo layout={layout}>{card.veiculo_modelo}</Modelo>
@@ -54,8 +54,8 @@ const Cards = () => {
                         </CardInfo>
                     </Card>
                 ))}
-                <PaginationComponent pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
             </ListaDeCards>
+            <PaginationComponent pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         </div>
     )
 }

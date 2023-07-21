@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ContainerCardsPorpagina = styled.div `
     display: flex;
     align-items: center;
-    // margin: 15px 0 0 23px;
 `;
 
 export const ParagrafoCardsPorPagina = styled.p `

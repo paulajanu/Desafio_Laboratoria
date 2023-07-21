@@ -6,5 +6,3 @@ export const ContainerOpcoesCards = styled.div `
     margin-top: 10px;
     gap: 85px;
 `;
-
- 

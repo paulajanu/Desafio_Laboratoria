@@ -6,6 +6,7 @@ export const LogoContainer = styled.div `
     align-items: center;
     justify-content: space-between;
 `;
+
 export const IconeMenu = styled(FaBars)`
     font-size: 28px;
     color: #ffffff;
@@ -15,13 +16,20 @@ export const IconeMenu = styled(FaBars)`
 
 export const LogoImagem = styled.img `
     height: 70px;
-    // margin-left: 40px;
-    // margin-right: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 499px) {
         height: 50px;
-        // margin-left: 3.5vw;
         margin-top: 3.5vw;
+    }
+
+    @media (max-width: 999px) {
+        height: 50px;
+        margin-top: 2.5vw;
+    }
+
+    @media (min-width: 1000px) {
+        height: 50px;
+        margin-top: 1.5vw;
     }
 `;
 
